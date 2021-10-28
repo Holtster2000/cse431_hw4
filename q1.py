@@ -63,9 +63,10 @@ def insertion_sort(s: List[Any]) -> None:
 
 if __name__ == '__main__':
     rand_seed = random.randint(0, 100000)
-    num_iterations = 100
+    num_iterations = 1000
     print("N,merge,insertion")
-    for size in [5, 10, 25, 50, 100, 500, 1000]:
+    #for size in [5, 10, 25, 50, 100, 500, 1000]:
+    for size in range(20,50):
         merge_time = 0
         for t in range(num_iterations):
             merge_time += timeit.timeit(
